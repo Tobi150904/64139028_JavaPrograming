@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class bai3 {
 	public static void main(String[] args) {
-		double a;
+		int a;
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Nhap vao so thuc a: ");
-		a = sc.nextDouble();
+		System.out.println("Enter an integer: ");
+		a = sc.nextInt();
 		
 		if (a % 2 == 0) {
-            System.out.println("So " + a + " la so chan");
+            System.out.println(a + " is even");
         } else {
-            System.out.println("So " + a + " la so le");
+            System.out.println(a + " is odd");
         }
-		System.out.println("Bye");
+		System.out.println("bye");
 	}
 }

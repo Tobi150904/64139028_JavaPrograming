@@ -8,11 +8,25 @@ public class bai4 {
         double height, weight;
         double bmi;
         
-        System.out.println("Enter your weight (kg): ");
+        System.out.println("Nhap can nang (kg): ");
         weight = sc.nextDouble();
-        System.out.println("Enter your height (m): ");
+        System.out.println("Nhap chieu cao (m): ");
         height = sc.nextDouble();
         bmi = weight / (height * height);
+		while (bmi < 0) {
+			System.out.println("Vui long nhap");
+			try {
+				System.out.println("Nhap can nang (kg): ");
+				weight = sc.nextDouble();
+			} catch (Exception e) {
+				System.out.println("Vui long nhap so ");
+				sc.next();
+				continue;
+			}
+			System.out.println("Enter your height (m): ");
+			height = sc.nextDouble();
+			bmi = weight / (height * height);
+		}
 		if (bmi < 18.5) {
 			System.out.println("Can nang thap");
 		} else if (bmi < 24.9) {

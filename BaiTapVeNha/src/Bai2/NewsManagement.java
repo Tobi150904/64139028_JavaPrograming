@@ -19,9 +19,9 @@ public class NewsManagement {
             option = sc.nextInt();
 
             switch (option) {
-                case 1: // Insert news
+                case 1: 
                     News news = new News();
-                    sc.nextLine(); // consume newline
+                    sc.nextLine();
                     System.out.print("Nhập Title: ");
                     news.setTitle(sc.nextLine());
                     System.out.print("Nhập Publish Date: ");
@@ -40,7 +40,7 @@ public class NewsManagement {
                     newsList.add(news);
                     break;
 
-                case 2: // View list news
+                case 2: 
                     for (News n : newsList) {
                         n.Display();
                     }

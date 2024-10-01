@@ -14,6 +14,5 @@ public class ViDu2 {
 		}
 		list.set(5, "Hello world");
 		System.out.println("Value is: " + (String)list.get(5));
-		System.out.println("Size of list: " + list.size());
 	}
 }

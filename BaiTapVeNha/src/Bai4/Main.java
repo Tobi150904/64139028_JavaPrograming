@@ -27,8 +27,7 @@ public class Main {
 					System.out.println("Please input class name: ");
 					student.setNameClass(sc.nextLine());
 					System.out.println("Please input semester: ");
-					student.setSemester(sc.nextInt());
-					// ID is auto increment
+					student.setSemester(sc.nextInt()); 
 					student.setID(listStudent.size() + 1);
 					for(int i = 0; i < 5; i++) {
 						System.out.println("Please input marks of subject " + (i + 1) + ": ");

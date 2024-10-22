@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sinhvien.SinhVienController">
+    <Label layoutX="68.0" layoutY="14.0" text="Them sinh vien" />
+    <Label layoutX="16.0" layoutY="54.0" text="Ma sinh vien" />
+    <Label layoutX="14.0" layoutY="104.0" text="Ho ten" />
+    <Label layoutX="14.0" layoutY="155.0" text="Ngay sinh" />
+    <TextField fx:id="txtMaSV" layoutX="100.0" layoutY="50.0" />
+    <TextField fx:id="txtHoTen" layoutX="100.0" layoutY="100.0" />
+    <TextField fx:id="txtNgaySinh" layoutX="100.0" layoutY="151.0" />
+    <Button layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#themSinhVien" text="Them" />
+    <Label layoutX="311.0" layoutY="14.0" text="Thong tin sinh vien" />
+    <TextArea fx:id="txtThongTin" layoutX="311.0" layoutY="51.0" prefHeight="124.0" prefWidth="254.0" />
+
+    <Button layoutX="200.0" layoutY="200.0" mnemonicParsing="false" onAction="#lamMoi" text="Lam moi" />
+<!--    Luu file json-->
+    <Button layoutX="300.0" layoutY="200.0" mnemonicParsing="false" onAction="#luuFile" text="Luu file" />
+</AnchorPane>

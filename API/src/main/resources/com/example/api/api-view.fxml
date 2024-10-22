@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--Viet cho toi 1 giao diẹn nhap vao url api va hien thi ket qua-->
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.api.ApiController">
+    <Label text="Nhap vao url API" />
+    <TextField fx:id="txtUrl" promptText="URL API"/>
+    <Button text="Gui" onAction="#sendRequest" />
+    <TextArea fx:id="txtResponse" editable="false"/>
+</VBox>

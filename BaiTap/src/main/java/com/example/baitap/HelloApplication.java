@@ -28,9 +28,9 @@ public class HelloApplication extends Application {
 
         Polygon triangle = new Polygon();
         triangle.getPoints().addAll(new Double[]{
-                200.0, 100.0,
-                150.0, 200.0,
-                250.0, 200.0
+                200.0, 110.0,
+                130.0, 200.0,
+                270.0, 200.0
         });
         triangle.setFill(Color.WHITE);
         triangle.setStroke(Color.BLACK);
@@ -43,7 +43,25 @@ public class HelloApplication extends Application {
         });
         redTriangle.setFill(Color.RED);
 
-        root.getChildren().addAll(body, foot1, foot2, triangle, redTriangle);
+        Polygon leftEar = new Polygon();
+        leftEar.getPoints().addAll(new Double[]{
+                170.0, 100.0,
+                190.0, 120.0,
+                170.0, 140.0
+        });
+        leftEar.setFill(Color.WHITE);
+        leftEar.setStroke(Color.BLACK);
+
+        Polygon rightEar = new Polygon();
+        rightEar.getPoints().addAll(new Double[]{
+                230.0, 100.0,
+                210.0, 120.0,
+                230.0, 140.0
+        });
+        rightEar.setFill(Color.WHITE);
+        rightEar.setStroke(Color.BLACK);
+
+        root.getChildren().addAll(body, foot1, foot2, triangle, redTriangle, leftEar, rightEar);
 
         Scene scene = new Scene(root, 400, 400);
         primaryStage.setTitle("Hello World!");

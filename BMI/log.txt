@@ -1,0 +1,21 @@
+10.00 bytes = 80.00 bits
+BMI là 20.28
+1.00 bytes = 8.00 bits
+BMI là 20.69
+2.00 bytes = 16.00 bits
+BMI là 20.43
+3.00 bytes = 24.00 bits
+BMI là 20.43
+4.00 bytes = 32.00 bits
+BMI là 20.43
+5.00 bytes = 40.00 bits
+BMI là 20.43
+6.00 bytes = 48.00 bits
+BMI là 20.43
+7.00 bytes = 56.00 bits
+BMI là 20.43
+8.00 bytes = 64.00 bits
+BMI là 20.43
+9.00 bytes = 72.00 bits
+BMI là 20.4311.00 bytes = 88.00 bits
+BMI là 19.03

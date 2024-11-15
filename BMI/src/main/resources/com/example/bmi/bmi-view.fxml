@@ -17,4 +17,8 @@
     <TextField fx:id="heightField"/>
     <Button text="Tính" onAction="#onCalculateButtonClick"/>
     <Label fx:id="resultLabel"/>
+    <Label text="Đổi Byte sang bit:"/>
+    <TextField fx:id="byteField"/>
+    <Button text="Đổi" onAction="#onConvertButtonClick"/>
+    <Label fx:id="bitResultLabel"/>
 </VBox>

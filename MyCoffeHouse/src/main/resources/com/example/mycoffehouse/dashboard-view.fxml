@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml" stylesheets="@dashboard.css">
-    <left>
-        <VBox styleClass="sidebar">
-            <MenuButton text="Menu" styleClass="sidebar-menu">
-                <MenuItem text="Dashboard"/>
-                <MenuItem text="Quản lý menu"/>
-                <MenuItem text="Đơn hàng"/>
-                <MenuItem text="Báo cáo"/>
-                <MenuItem text="Khách hàng"/>
-            </MenuButton>
-        </VBox>
-    </left>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.mycoffehouse.controllers.MainController">
+    <!-- Thanh menu trên cùng -->
+    <top>
+        <MenuBar>
+            <Menu text="Hệ thống">
+                <MenuItem onAction="#logout" text="Đăng xuất" />
+                <MenuItem onAction="#exit" text="Thoát" />
+            </Menu>
+            <Menu text="Quản lý">
+                <MenuItem onAction="#showProductView" text="Sản phẩm" />
+                <MenuItem onAction="#showOrderView" text="Hóa đơn" />
+                <MenuItem onAction="#showEmployeeView" text="Nhân viên" />
+            </Menu>
+            <Menu text="Báo cáo">
+                <MenuItem onAction="#showReportView" text="Doanh thu" />
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- Nội dung hiển thị -->
     <center>
-        <VBox spacing="20" alignment="CENTER">
-            <Label text="Doanh thu hôm nay: 1,200,000 VND" styleClass="highlight"/>
-            <Label text="Đơn hàng hôm nay: 35"/>
-            <Label text="Món bán chạy: Trà sữa trân châu"/>
-        </VBox>
+        <TabPane fx:id="contentTabPane" prefHeight="104.0" prefWidth="202.0" />
     </center>
 </BorderPane>

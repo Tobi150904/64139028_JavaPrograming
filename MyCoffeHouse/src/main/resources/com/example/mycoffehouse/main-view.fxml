@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller=".controllers.MainController">
+    <!-- Thanh menu trên cùng -->
+    <top>
+        <MenuBar>
+            <Menu text="Hệ thống">
+                <MenuItem text="Đăng xuất" onAction="#logout" />
+                <MenuItem text="Thoát" onAction="#exit" />
+            </Menu>
+            <Menu text="Quản lý">
+                <MenuItem text="Sản phẩm" onAction="#showProductView" />
+                <MenuItem text="Hóa đơn" onAction="#showOrderView" />
+                <MenuItem text="Nhân viên" onAction="#showEmployeeView" />
+            </Menu>
+            <Menu text="Báo cáo">
+                <MenuItem text="Doanh thu" onAction="#showReportView" />
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <!-- Nội dung hiển thị -->
+    <center>
+        <TabPane fx:id="contentTabPane" />
+    </center>
+</BorderPane>
+

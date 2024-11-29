@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.mycoffehouse.controllers.LoginController" stylesheets="@login.css">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <ImageView fx:id="logoImageView" fitHeight="100" fitWidth="100" />
+    <Label text="The Coffee House Management" styleClass="header"/>
+    <TextField promptText="Tên đăng nhập" styleClass="text-field"/>
+    <PasswordField promptText="Mật khẩu" styleClass="text-field"/>
+    <Button text="Đăng nhập" styleClass="primary-button"/>
+    <Hyperlink text="Quên mật khẩu?" styleClass="hyperlink"/>
+</VBox>

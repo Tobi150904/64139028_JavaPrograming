@@ -5,4 +5,6 @@ module com.example.mycoffehouse {
 
     opens com.example.mycoffehouse to javafx.fxml;
     exports com.example.mycoffehouse;
+    exports com.example.mycoffehouse.controllers;
+    opens com.example.mycoffehouse.controllers to javafx.fxml;
 }

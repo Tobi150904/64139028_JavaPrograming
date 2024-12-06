@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="th.ngoviethoang.simplemath.SimpleMathController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label text="Simple Math"/>
+
+    <HBox prefWidth="182.0" spacing="10.0">
+        <Label text="A =" />
+        <TextField fx:id="numberA" promptText="Nhập số A" />
+    </HBox>
+
+    <HBox spacing="10.0">
+        <Label text="B =" />
+        <TextField fx:id="numberB" promptText="Nhập số B" />
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Label text="Chọn phép toán" />
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <RadioButton fx:id="radioAdd" text="Cộng" />
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <RadioButton fx:id="radioSubtract" text="Trừ" />
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <RadioButton fx:id="radioMultiply" text="Nhân" />
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <RadioButton fx:id="radioDivide" text="Chia" />
+    </HBox>
+
+    <Button fx:id="buttonCalculate" text="Tính" />
+
+    <Label fx:id="textResult" text="Kết quả: " />
+</VBox>

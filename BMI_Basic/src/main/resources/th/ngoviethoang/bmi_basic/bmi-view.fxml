@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="366.0" prefWidth="233.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="th.ngoviethoang.bmi_basic.BMIController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label text="BMI" />
+    <HBox prefHeight="41.0" prefWidth="130.0">
+        <children>
+            <Label prefHeight="18.0" prefWidth="63.0" text="Chiều cao:" />
+            <TextField fx:id="heightField" prefHeight="26.0" prefWidth="130.0" />
+        </children>
+    </HBox>
+    <HBox prefHeight="41.0" prefWidth="130.0">
+        <children>
+            <Label prefHeight="18.0" prefWidth="63.0" text="Cân nặng:" />
+            <TextField fx:id="weightField" prefHeight="26.0" prefWidth="130.0" />
+        </children>
+    </HBox>
+    <CheckBox fx:id="asianCheckBox" mnemonicParsing="false" text="Là người châu Á" />
+    <Button onAction="#onBMIButtonClick" text="Tính" />
+    <Label fx:id="resultLabel" text="Kết quả: " />
+</VBox>
